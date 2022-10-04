@@ -1,0 +1,247 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #ECF0F1;
+    /* shortcut for ^ -- font: 15px/1.5 Arial, Helvetica, sans-serif;*/
+}
+
+/* for class, use dot(.), for id, use number sign (#)*/
+
+/* Global*/
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0%;
+    padding: 0;
+}
+
+.button1{
+    height: 38px;
+    background: #78281F;
+    color: #fff;
+    border: none;
+    padding: 0 20px 0 20px;
+    
+}
+
+.button2{
+    height: 36px;
+    background: #78281F;
+    color: #fff;
+    border: none;
+    padding: 0 15px 0 15px;
+}
+
+.dark{
+    padding: 15px;
+    background: #F2D7D5;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+
+header{
+    background-color: #D98880;
+    color: #000;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #283747 3px solid;
+}
+
+header a{
+    color:#000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+/* for padding, the sequence is top, right, bottom, left*/
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 12px;
+}
+
+header .highlight, header .current a{
+    color: #641e16;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #7b241c;
+    font-weight: bold;
+}
+    
+/* Showcase */
+
+#showcase{
+    min-height: 400px;
+    background:url('../img/showcase.jpg') no-repeat 0 -100px;
+    background-size: 190%;
+    text-align: center;
+    color: #000;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+
+}
+
+/* newsletter */
+
+#newsletter{
+    padding:15px;
+    color: #000;
+    background: #F2D7D5;
+
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type=email]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* boxes */
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align:center;
+}
+
+#boxes .box img{
+    width: 100px;
+}
+
+
+/* sidebar */
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+/* Main-col*/
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/* Services */
+
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #283747 solid 1px;
+    margin-bottom: 5px;
+    background: #F2D7D5;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #000;
+    background-color: #F6DDCC;
+    text-align: center;
+}
+
+/*media queries */
+
+@media(max-width: 768px){
+   header #branding, 
+   header nav,
+   header nav li,
+   #newsletter h1,
+   #boxes .box{
+    float: none;
+    text-align: center;
+    width: 100%;
+   }
+
+   header{
+    padding-bottom: 20px;
+    text-align: center;
+   }
+
+   #showcase h1{
+    margin-top: 40px;
+
+   }
+
+   #newsletter form{
+    display: block;
+    width: 100%;
+   }
+
+   #newsletter button{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   #newsletter form input[type="email"]{
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
+   }
+}
+
+/*  body{
+        display: none;
+    }
+
+    This is for tablet size standard */
